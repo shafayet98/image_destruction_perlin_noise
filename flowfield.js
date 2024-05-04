@@ -1,5 +1,5 @@
-var inc = 0.01;
-var scl = 20;
+var inc = 0.1;
+var scl = 10;
 var cols, rows;
 
 var zoff = 0;
@@ -24,7 +24,7 @@ function setup() {
 
     flowfield = new Array(cols * rows);
 
-    for (var i = 0; i < 1000; i++) {
+    for (var i = 0; i < 200; i++) {
         particles[i] = new Particle();
     }
 
@@ -35,7 +35,7 @@ function setup() {
             colorsImage.push(get(i,j));
         }
     }
-    // background(255);
+    background(255);
 }
 
 function draw() {
